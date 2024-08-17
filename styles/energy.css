@@ -1,0 +1,102 @@
+.energy-container{
+    padding: 50px 20px;
+}
+
+.energy-container .energy-title-container{
+    color: #0e156d;
+    font-family: Montserrat;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.energy-container .energy-title-container .title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid #f29e0e;
+    padding: 0.3em 0;
+}
+
+.energy-container .energy-title-container .description {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    row-gap: 40px;
+}
+
+.card-container{
+    padding: 30px;
+    display: flex;
+    row-gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);;
+}
+
+.card-container .card-image-element-container .image-container {
+    position: relative;
+    vertical-align: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container .card-image-element-container .image-container .image-element {
+    height: auto;
+    max-width: 100%;
+    vertical-align: top;
+}
+
+.card-container .card-image-element-container .label-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container .card-image-element-container .label-container .service-label {
+    color: #0e156d;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+
+.card-container .text-container {
+    width: 100%;
+}
+
+.card-container .text-container .text-element {
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+
+@media (min-width: 910px) {
+    .energy-container .energy-title-container .description {
+        text-align: center;
+    }
+
+    .cards-container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 40px;
+    }
+
+    .card-container{
+        min-width: 329px;
+        max-width: 329px;
+    }
+}
