@@ -1,0 +1,37 @@
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25D366; /* Color verde de WhatsApp */display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 04px8pxrgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.whatsapp-buttonimg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Color verde más oscuro de WhatsApp */box-shadow: 06px12pxrgba(0, 0, 0, 0.3);
+}
+
+
