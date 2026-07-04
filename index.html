@@ -1,254 +1,681 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aiyra Electromecanica</title>
-    <link rel="icon" href="./assets/aiyra-favicon.png" type="image/x-icon">
-    <link rel="stylesheet" id="wpex-google-font-open-sans-css" href="//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap&amp;subset=latin" media="all">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aiyra Electromecánica — Montajes industriales, media tensión y monitoreo 24/7</title>
+<meta name="description" content="Instalaciones electromecánicas industriales en Argentina: montaje de estructuras autoportantes y racks a gran escala, media tensión, redes contra incendio, refrigeración, corrección de factor de potencia y monitoreo remoto 24/7. Pilar, Buenos Aires.">
+<meta property="og:title" content="Aiyra Electromecánica — Montamos la industria que no puede parar">
+<meta property="og:description" content="Autoportantes y racks a gran escala, media tensión, redes contra incendio, frío industrial y monitoreo 24/7. Operaciones en Argentina, Uruguay, Brasil y Europa.">
+<meta property="og:url" content="https://aiyraelectromecanica.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://aiyraelectromecanica.com/assets/quienes-somos.jpeg">
+<link rel="icon" href="/assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Aiyra Electromecánica S.A.S.",
+  "description": "Instalaciones electromecánicas industriales: montajes autoportantes, media tensión, redes contra incendio, refrigeración industrial, automatización y monitoreo remoto 24/7.",
+  "url": "https://aiyraelectromecanica.com/",
+  "telephone": "+54 9 11 3314-6544",
+  "address": {"@type": "PostalAddress", "addressLocality": "Pilar", "addressRegion": "Buenos Aires", "addressCountry": "AR"},
+  "areaServed": ["Argentina", "Uruguay", "Brasil", "Europa"]
+}
+</script>
+<style>
+:root{
+  --tinta:#0E2233;
+  --acero:#3E5468;
+  --papel:#FFFFFF;
+  --cielo:#F1F6FA;
+  --naranja:#F4570A;
+  --azul:#1177C7;
+  --linea:#D6E1E9;
+  --max:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+body{font-family:'IBM Plex Sans',system-ui,sans-serif;color:var(--tinta);background:var(--papel);line-height:1.6;font-size:17px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.mono{font-family:'IBM Plex Mono',monospace}
+h1,h2,h3{font-family:'Archivo',sans-serif;line-height:1.05;letter-spacing:-.01em}
+:focus-visible{outline:3px solid var(--naranja);outline-offset:2px}
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/introduction.css">
-    <link rel="stylesheet" href="styles/how-we-are.css">
-    <link rel="stylesheet" href="styles/services.css">
-    <link rel="stylesheet" href="styles/energy.css">
-    <link rel="stylesheet" href="styles/robotic.css">
+/* grilla de plano técnico */
+.plano{background-image:linear-gradient(rgba(17,119,199,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(17,119,199,.06) 1px,transparent 1px);background-size:40px 40px}
 
+/* ---------- Nav ---------- */
+nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--linea)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-family:'Archivo',sans-serif;font-weight:800;font-size:1.05rem;letter-spacing:.02em}
+.brand img{height:36px;width:auto}
+.nav-links{display:flex;gap:26px;list-style:none;align-items:center}
+.nav-links a{text-decoration:none;font-size:.92rem;font-weight:500;color:var(--acero)}
+.nav-links a:hover{color:var(--naranja)}
+.btn{display:inline-block;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:600;font-size:.95rem;border:2px solid transparent;cursor:pointer;transition:transform .12s ease, box-shadow .12s ease, background .12s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(244,87,10,.22)}
+.btn-fuego{background:var(--naranja);color:#fff}
+.btn-linea{border-color:var(--tinta);color:var(--tinta)}
+.btn-linea:hover{box-shadow:0 8px 20px rgba(14,34,51,.14)}
+.nav-cta{padding:9px 18px;font-size:.88rem}
+.menu-btn{display:none;background:none;border:none;font-size:1.6rem;cursor:pointer;color:var(--tinta)}
+
+/* ---------- Hero con 3D ---------- */
+header.hero{position:relative;overflow:hidden;background:linear-gradient(180deg,#FFFFFF 0%,#EDF5FB 100%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(17,119,199,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(17,119,199,.07) 1px,transparent 1px);background-size:40px 40px;mask-image:radial-gradient(ellipse 90% 80% at 60% 40%,#000 40%,transparent 100%)}
+.hero-in{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:center;max-width:var(--max);margin:0 auto;padding:64px 24px 40px;min-height:640px}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:.8rem;letter-spacing:.14em;color:var(--azul);text-transform:uppercase}
+.hero h1{font-size:clamp(2.4rem,5.4vw,4.1rem);font-weight:800;margin:16px 0 20px;max-width:15ch}
+.hero h1 em{font-style:normal;color:var(--naranja)}
+.hero p.lead{font-size:1.12rem;color:var(--acero);max-width:52ch;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-hint{margin-top:26px;font-family:'IBM Plex Mono',monospace;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:#7E93A6;display:flex;align-items:center;gap:8px}
+.hero-hint::before{content:"";width:26px;height:1px;background:#7E93A6}
+#lienzo3d{position:relative;width:100%;height:560px;cursor:grab;touch-action:pan-y}
+#lienzo3d:active{cursor:grabbing}
+#lienzo3d canvas{display:block}
+.chip3d{position:absolute;left:8px;bottom:8px;font-family:'IBM Plex Mono',monospace;font-size:.68rem;letter-spacing:.1em;color:#7E93A6;text-transform:uppercase;background:rgba(255,255,255,.7);padding:4px 10px;border-radius:4px;border:1px solid var(--linea)}
+
+/* franja de cotas */
+.cotas{border-top:1px solid var(--linea);background:#fff;position:relative}
+.cotas-in{display:grid;grid-template-columns:repeat(4,1fr);max-width:var(--max);margin:0 auto;padding:0 24px;font-family:'IBM Plex Mono',monospace}
+.cota{padding:26px 18px 30px;border-right:1px solid var(--linea);position:relative}
+.cota:first-child{padding-left:0}
+.cota:last-child{border-right:none}
+.cota b{display:block;font-size:1.9rem;font-weight:500;color:var(--tinta)}
+.cota b .uni{color:var(--naranja)}
+.cota span{font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:#7E93A6}
+
+/* ---------- Secciones ---------- */
+section{padding:92px 0}
+.sec-head{margin-bottom:48px;max-width:62ch}
+.sec-head .eyebrow{color:var(--naranja)}
+.sec-head h2{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:800;margin:10px 0 14px}
+.sec-head p{color:var(--acero)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease, transform .6s ease}
+.reveal.visto{opacity:1;transform:none}
+
+/* Quiénes somos */
+.dos-col{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.dos-col img{border-radius:10px;box-shadow:0 18px 44px rgba(14,34,51,.16)}
+.check{list-style:none;margin-top:22px}
+.check li{padding-left:30px;position:relative;margin-bottom:12px;color:var(--acero)}
+.check li::before{content:"";position:absolute;left:0;top:9px;width:14px;height:14px;background:var(--naranja);clip-path:polygon(14% 44%,0 60%,40% 100%,100% 16%,84% 2%,40% 70%)}
+
+/* Servicios */
+.cielo{background:var(--cielo)}
+.ficha-destacada{background:linear-gradient(120deg,#0E2233 0%,#123A5C 100%);color:#fff;border-radius:12px;padding:44px;display:grid;grid-template-columns:1.3fr .7fr;gap:40px;margin-bottom:26px;position:relative;overflow:hidden}
+.ficha-destacada::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:34px 34px;pointer-events:none}
+.spec{font-family:'IBM Plex Mono',monospace;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--naranja);display:block;margin-bottom:12px}
+.ficha-destacada h3{font-size:1.7rem;font-weight:800;margin-bottom:14px}
+.ficha-destacada p{color:#C9D8E4;position:relative;z-index:1}
+.ficha-dato{border-left:1px solid rgba(255,255,255,.25);padding-left:32px;display:flex;flex-direction:column;justify-content:center;font-family:'IBM Plex Mono',monospace;position:relative;z-index:1}
+.ficha-dato b{font-size:2.6rem;font-weight:500;line-height:1}
+.ficha-dato span{font-size:.78rem;color:#9FB6C8;text-transform:uppercase;letter-spacing:.08em;margin-top:8px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.ficha{background:#fff;border:1px solid var(--linea);border-radius:10px;padding:30px;transition:border-color .15s ease, transform .15s ease, box-shadow .15s ease}
+.ficha:hover{border-color:var(--azul);transform:translateY(-4px);box-shadow:0 14px 30px rgba(17,119,199,.12)}
+.ficha h3{font-size:1.12rem;font-weight:700;margin-bottom:10px}
+.ficha p{font-size:.95rem;color:var(--acero)}
+.ficha .spec{color:var(--azul)}
+
+/* Monitoreo: planes + panel vivo */
+.moni{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+.panel{background:#0E2233;border-radius:12px;padding:26px;color:#DCE8F2;font-family:'IBM Plex Mono',monospace;box-shadow:0 22px 50px rgba(14,34,51,.28);position:sticky;top:96px}
+.panel-head{display:flex;justify-content:space-between;align-items:center;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#7E93A6;margin-bottom:18px}
+.vivo{display:inline-flex;align-items:center;gap:7px;color:#3AD07A}
+.vivo::before{content:"";width:8px;height:8px;border-radius:50%;background:#3AD07A;animation:pulso 1.6s infinite}
+@keyframes pulso{0%,100%{opacity:1}50%{opacity:.25}}
+.tagrow{display:flex;justify-content:space-between;align-items:baseline;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:.9rem}
+.tagrow:last-of-type{border-bottom:none}
+.tagrow .tagname{color:#9FB6C8;font-size:.78rem}
+.tagrow .valor{font-size:1.25rem;color:#fff}
+.tagrow .ok{color:#3AD07A;font-size:.7rem;letter-spacing:.1em}
+.tagrow .alerta{color:#FFB020;font-size:.7rem;letter-spacing:.1em}
+.panel-foot{margin-top:16px;font-size:.68rem;color:#5F7489}
+.planes{display:grid;grid-template-columns:1fr;gap:20px}
+.plan{background:#fff;border:1px solid var(--linea);border-radius:10px;padding:26px 28px}
+.plan.destacado{border:2px solid var(--naranja);position:relative}
+.plan.destacado::before{content:"MÁS ELEGIDO";position:absolute;top:-11px;left:24px;background:var(--naranja);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:.66rem;letter-spacing:.12em;padding:3px 10px;border-radius:3px}
+.plan h3{font-size:1.1rem;font-weight:800;margin-bottom:4px}
+.plan .para{font-size:.82rem;color:var(--azul);margin-bottom:12px;font-family:'IBM Plex Mono',monospace}
+.plan p{font-size:.93rem;color:var(--acero)}
+
+/* Energía */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.ficha-fuego{border-top:4px solid var(--naranja)}
+
+/* Sectores */
+.sectores{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.tag{font-family:'IBM Plex Mono',monospace;font-size:.82rem;letter-spacing:.05em;border:1px solid var(--linea);border-radius:999px;padding:8px 18px;color:var(--acero);background:#fff;transition:border-color .15s, color .15s}
+.tag:hover{border-color:var(--naranja);color:var(--tinta)}
+.marcas{margin-top:34px;color:var(--acero);font-size:.95rem}
+.marcas b{color:var(--tinta)}
+
+/* CTA final */
+.cierre{background:linear-gradient(120deg,#0E2233 0%,#123A5C 100%);color:#fff}
+.cierre .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.cierre h2{font-size:clamp(1.8rem,3.6vw,2.7rem);font-weight:800;margin-bottom:16px}
+.cierre p{color:#C9D8E4;max-width:52ch}
+.cierre .hero-cta{margin:28px 0 0}
+.btn-blanco{border-color:#fff;color:#fff}
+.dato-contacto{font-family:'IBM Plex Mono',monospace;border-left:1px solid rgba(255,255,255,.25);padding-left:32px}
+.dato-contacto b{display:block;font-size:1.15rem;font-weight:500}
+.dato-contacto span{font-size:.75rem;color:#9FB6C8;text-transform:uppercase;letter-spacing:.08em;display:block;margin:4px 0 18px}
+
+/* Footer */
+footer{background:#0A1926;color:#7E93A6;padding:44px 0;font-size:.9rem}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer a{color:#C9D8E4;text-decoration:none}
+footer a:hover{color:#fff}
+
+/* WhatsApp flotante */
+.wa{position:fixed;right:22px;bottom:22px;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:60}
+.wa svg{width:30px;height:30px;fill:#fff}
+
+/* Responsive */
+@media (max-width:980px){
+  .hero-in{grid-template-columns:1fr;min-height:auto;padding-top:48px}
+  #lienzo3d{height:400px}
+  .dos-col,.ficha-destacada,.cierre .wrap,.moni{grid-template-columns:1fr}
+  .panel{position:static}
+  .grid-3{grid-template-columns:1fr 1fr}
+  .ficha-dato{border-left:none;border-top:1px solid rgba(255,255,255,.25);padding:24px 0 0}
+  .cotas-in{grid-template-columns:1fr 1fr}
+  .cota:nth-child(2){border-right:none}
+  .dato-contacto{border-left:none;padding-left:0}
+}
+@media (max-width:640px){
+  .nav-links{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;flex-direction:column;padding:18px 24px;border-bottom:1px solid var(--linea);gap:16px}
+  .nav-links.abierto{display:flex}
+  .menu-btn{display:block}
+  .grid-3,.grid-2{grid-template-columns:1fr}
+  section{padding:64px 0}
+  #lienzo3d{height:320px}
+}
+
+/* Obras destacadas */
+.obra{display:flex;flex-direction:column}
+.obra p{flex:1}
+.obra-metricas{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px;padding-top:16px;border-top:1px solid var(--linea);font-family:'IBM Plex Mono',monospace}
+.obra-metricas b{display:block;font-size:1.25rem;font-weight:500;color:var(--naranja)}
+.obra-metricas span{font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;color:#7E93A6;line-height:1.3;display:block}
+
+/* Proceso */
+.pasos{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.paso{background:#fff;border:1px solid var(--linea);border-radius:10px;padding:22px;position:relative}
+.paso b{font-family:'IBM Plex Mono',monospace;font-size:.8rem;color:var(--naranja);letter-spacing:.1em}
+.paso h3{font-size:1rem;font-weight:700;margin:8px 0 6px}
+.paso p{font-size:.85rem;color:var(--acero)}
+@media (max-width:980px){.pasos{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.pasos{grid-template-columns:1fr}.obra-metricas{grid-template-columns:repeat(3,1fr)}}
+</style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Tu Negocio">
-            </div>
-            <nav>
-                <div class="elements-container">
-                    <span class="close-menu">X</span>
-                    <ul>
-                        <li><a href="#init">Inicio</a></li>
-                        <li><a href="#how">Quiénes Somos</a></li>
-                        <li><a href="#services">Nuestros Servicios</a></li>
-                        <li><a href="#energy">Energy</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
+<nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="#inicio"><img src="/assets/logo.png" alt="Aiyra Electromecánica">AIYRA</a>
+    <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('links').classList.toggle('abierto')">☰</button>
+    <ul class="nav-links" id="links">
+      <li><a href="#empresa">Empresa</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#monitoreo">Monitoreo 24/7</a></li>
+      <li><a href="#energia">Energía</a></li>
+      <li><a href="#contacto" class="btn btn-fuego nav-cta">Pedir cotización</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="hero-in">
+    <div>
+      <span class="eyebrow">Pilar · Argentina — Operaciones en AR · UY · BR · EU</span>
+      <h1>Montamos la industria que <em>no puede parar</em>.</h1>
+      <p class="lead">Instalaciones electromecánicas para plantas y centros de distribución que operan 24/7: estructuras autoportantes y racks a gran escala, media tensión, redes contra incendio, frío industrial y monitoreo remoto.</p>
+      <div class="hero-cta">
+        <a class="btn btn-fuego" href="#contacto">Pedir cotización</a>
+        <a class="btn btn-linea" href="#servicios">Ver servicios</a>
+      </div>
+      <p class="hero-hint">Girá la estructura arrastrando — shuttle en operación</p>
+    </div>
+    <div id="lienzo3d" aria-label="Modelo 3D de estructura autoportante con pallet shuttle">
+      <span class="chip3d">Autoportante + pallet shuttle · modelo 3D</span>
+    </div>
+  </div>
+  <div class="cotas">
+    <div class="cotas-in">
+      <div class="cota"><b>+<span class="cuenta" data-fin="50">0</span></b><span>obras industriales ejecutadas</span></div><div class="cota"><b><span class="cuenta" data-fin="1400">0</span> <span class="uni">t</span></b><span>la mayor: autoportante en un solo montaje</span></div>
+      <div class="cota"><b><span class="cuenta" data-fin="34">0</span></b><span>profesionales propios</span></div>
+      <div class="cota"><b><span class="cuenta" data-fin="4">0</span></b><span>países con operaciones</span></div>
+          </div>
+  </div>
+</header>
+
+<section id="empresa">
+  <div class="wrap dos-col">
+    <div class="reveal">
+      <span class="eyebrow" style="color:var(--naranja)">La empresa</span>
+      <h2 style="font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:800;margin:10px 0 14px">Ingeniería y ejecución con equipo propio</h2>
+      <p style="color:var(--acero)">Aiyra Electromecánica S.A.S. es una empresa argentina con más de 20 años de trayectoria en Sudamérica y Europa. Ejecutamos con personal propio, ART y seguros al día, y supervisión permanente en obra — desde la ingeniería de detalle hasta la puesta en marcha.</p>
+      <ul class="check">
+        <li>Más de 50 obras industriales ejecutadas — la mayor: una estructura autoportante de 1.400 toneladas para un centro de distribución en operación continua.</li>
+        <li>Especialistas en plantas productivas 24/7, donde la parada no es una opción.</li>
+        <li>Certificación industrial FEM y cumplimiento del régimen de Seguridad e Higiene (Dec. 911/96).</li>
+        <li>Clientes en retail, farma, alimentos, papel y logística.</li>
+      </ul>
+    </div>
+    <img class="reveal" src="/assets/quienes-somos.jpeg" alt="Equipo de Aiyra Electromecánica en obra" loading="lazy">
+  </div>
+</section>
+
+<section class="cielo plano" id="servicios">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Servicios</span>
+      <h2>Obra, montaje y mantenimiento industrial</h2>
+      <p>Cada servicio se ejecuta con ingeniería propia, cronogramas verificables y documentación completa de obra.</p>
+    </div>
+
+    <div class="ficha-destacada reveal">
+      <div>
+        <span class="spec">Autoportantes · Racks · Pallet shuttle · Norma FEM</span>
+        <h3>Montaje de sistemas de almacenaje a gran escala</h3>
+        <p>Montamos estructuras autoportantes, racks selectivos, drive-in y sistemas con shuttle para centros de distribución. Ingeniería de anclajes, topografía y control de tolerancias, coordinación con integradores de automatización y equipos de elevación propios. Trabajamos con los principales fabricantes internacionales de sistemas de almacenaje.</p>
+      </div>
+      <div class="ficha-dato">
+        <b>+50</b>
+        <span>obras ejecutadas · récord: 1.400 t de acero en un solo montaje — CD en operación 24/7</span>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <div class="ficha reveal">
+        <span class="spec">13,2 / 33 kV · Celdas · SET</span>
+        <h3>Media tensión</h3>
+        <p>Desarrollo, cálculo y montaje de subestaciones, celdas, transformadores y distribución para plantas y parques industriales.</p>
+      </div>
+      <div class="ficha reveal">
+        <span class="spec">Sala de bombas · Red húmeda · Rociadores</span>
+        <h3>Redes contra incendio</h3>
+        <p>Cálculo, montaje y puesta en marcha de redes contra incendio completas para naves de gran superficie y depósitos.</p>
+      </div>
+      <div class="ficha reveal">
+        <span class="spec">NH3 · Freón · HVAC · Cámaras</span>
+        <h3>Refrigeración y climatización</h3>
+        <p>Frío industrial y alimentario, aire acondicionado central, calderas y cámaras. Instalación, service y mejora de eficiencia.</p>
+      </div>
+      <div class="ficha reveal">
+        <span class="spec">PLC · Robótica · Industria 4.0</span>
+        <h3>Automatización</h3>
+        <p>Conversión a robótica, integración de PLCs y puesta en marcha de líneas productivas continuas.</p>
+      </div>
+      <div class="ficha reveal">
+        <span class="spec">Molinos · Prensas · Transporte neumático</span>
+        <h3>Montaje agroindustrial</h3>
+        <p>Ingeniería y montaje de plantas de proceso: molinería, transporte neumático, filtros de mangas y fuerza motriz.</p>
+      </div>
+      <div class="ficha reveal">
+        <span class="spec">Abonos mensuales · Correctivo + preventivo</span>
+        <h3>Mantenimiento industrial</h3>
+        <p>Contratos de mantenimiento con visitas programadas, repuestos y respuesta prioritaria para equipos críticos: generadores, HVAC, frío y tableros.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="obras">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Obras destacadas</span>
+      <h2>Más de 50 obras que respaldan cada cotización</h2>
+      <p>Alcance real, métricas reales. Así trabajamos cuando la planta no puede parar.</p>
+    </div>
+    <div class="grid-3">
+      <div class="ficha obra reveal">
+        <span class="spec">Autoportante · Retail · Operación 24/7</span>
+        <h3>Estructura autoportante de 1.400 toneladas</h3>
+        <p>Montaje completo de la estructura autoportante de un centro de distribución: ingeniería de anclajes, topografía y control de tolerancias milimétricas en 31 m de altura, con coordinación de integrador de automatización y equipos de elevación propios.</p>
+        <div class="obra-metricas"><div><b>1.400 t</b><span>acero montado</span></div><div><b>31 m</b><span>altura</span></div><div><b>24/7</b><span>operación del CD</span></div></div>
+      </div>
+      <div class="ficha obra reveal">
+        <span class="spec">Papelera · Producción continua · HVAC + Frío</span>
+        <h3>Mantenimiento integral en planta papelera 24/7</h3>
+        <p>Mantenimiento preventivo y correctivo de refrigeración y climatización en ambiente de producción continua de papel, con seguimiento por TAG de cada equipo, comparativas entre mantenimientos y reporting técnico por visita.</p>
+        <div class="obra-metricas"><div><b>24/7</b><span>producción sin parada</span></div><div><b>100%</b><span>equipos con TAG e historial</span></div><div><b>52</b><span>visitas programadas/año</span></div></div>
+      </div>
+      <div class="ficha obra reveal">
+        <span class="spec">Sector público · Grupos electrógenos</span>
+        <h3>Mantenimiento de parque de 37 generadores</h3>
+        <p>Propuesta integral de mantenimiento correctivo y preventivo del parque de grupos electrógenos de un municipio del Gran Buenos Aires: relevamiento, plan anual por equipo y respuesta prioritaria ante contingencias.</p>
+        <div class="obra-metricas"><div><b>37</b><span>generadores</span></div><div><b>2</b><span>modalidades: preventivo + correctivo</span></div><div><b>100%</b><span>del parque relevado</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cielo plano" id="monitoreo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Nuevo servicio</span>
+      <h2>Monitoreo remoto 24/7 de sus equipos críticos</h2>
+      <p>Conectamos sus centrales de frío, HVAC y tableros a nuestra plataforma de telemetría. Alarmas en tiempo real, historial de variables y un equipo técnico que actúa antes de que la falla pare su producción.</p>
+    </div>
+    <div class="moni">
+      <div class="panel reveal" aria-label="Panel de telemetría en vivo (demostración)">
+        <div class="panel-head"><span>AIYRA · TELEMETRÍA</span><span class="vivo">EN VIVO</span></div>
+        <div class="tagrow"><div><div class="tagname">CÁMARA FRÍO 01 — Túnel</div><b class="valor" id="v1">-18,4 °C</b></div><span class="ok" id="s1">NORMAL</span></div>
+        <div class="tagrow"><div><div class="tagname">ROOFTOP 03 — Sala producción</div><b class="valor" id="v2">7,2 °C</b></div><span class="ok" id="s2">NORMAL</span></div>
+        <div class="tagrow"><div><div class="tagname">TABLERO GENERAL — cos φ</div><b class="valor" id="v3">0,96</b></div><span class="ok" id="s3">NORMAL</span></div>
+        <div class="tagrow"><div><div class="tagname">COMPRESOR 02 — Presión alta</div><b class="valor" id="v4">11,8 bar</b></div><span class="ok" id="s4">NORMAL</span></div>
+        <div class="panel-foot">Demostración con valores simulados. Sus equipos, sus TAGs, sus alarmas — en su celular y en nuestra guardia.</div>
+      </div>
+      <div class="planes">
+        <div class="plan reveal">
+          <h3>Preventivo</h3>
+          <p class="para">Para equipos no críticos</p>
+          <p>Visitas programadas, informe técnico por equipo (TAG), plan anual de tareas y repuestos con prioridad de compra.</p>
         </div>
-    </header>
-
-    <section id="init" class="introduction-container">
-        <div class="overlay">
-            <div></div>
+        <div class="plan destacado reveal">
+          <h3>Preventivo + Monitoreo</h3>
+          <p class="para">Para frío alimentario y HVAC</p>
+          <p>Todo lo del plan Preventivo más telemetría en tiempo real de temperaturas, presiones y consumos, alarmas automáticas por desvío y dashboard web con historial de variables.</p>
         </div>
-
-        <section class="titles-container">
-            <p class="first">Servicios de Ingenieria Industrial 4.0</p>
-            <div class="divisor"></div>
-            <p class="second">OBRA | MONTAJE | OPERACIÓN | MANTENIMIENTO</p>
-        </section>
-    </section>
-
-    <section id="how" class="how-we-are-container">
-        <figure class="image-container">
-            <img width="719" height="591" src="./assets/quienes-somos.jpeg" class="image-element" alt="" decoding="async" loading="lazy" title="quienes-somos">
-        </figure>
-
-        <div class="us-container">
-            <h4 class="title">¿Quienes somos?</h4>
-            <p class="description">Somos una empresa líder que brinda soluciones de <strong>INGENIERÍA INDUSTRIAL</strong> manufacturera con más de 20 años de experiencia en Sudamérica y Europa.</p>
-            <p class="description">Pioneros en Argentina de <strong>INDUSTRIA 4.0.</strong>&nbsp;Contamos con certificación industrial FEM.</p>
+        <div class="plan reveal">
+          <h3>Monitoreo + SLA 24/7</h3>
+          <p class="para">Para producción continua</p>
+          <p>Guardia técnica con tiempos de respuesta garantizados, atención de emergencias las 24 horas y reporte mensual de eficiencia energética.</p>
         </div>
+        <div class="reveal" style="margin-top:6px"><a class="btn btn-fuego" href="#contacto">Consultar planes de monitoreo</a></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="partners-container">
-            <div class="partners-elements-container">
-                <h3 class="title">Partners estratégicos:</h3>
+<section id="energia">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Energía</span>
+      <h2>Menos penalizaciones, más eficiencia</h2>
+      <p>Instalaciones eléctricas industriales tradicionales y sustentables, con foco en reducir el costo energético real de su planta.</p>
+    </div>
+    <div class="grid-2">
+      <div class="ficha ficha-fuego reveal">
+        <span class="spec">cos φ ≥ 0,95 · Bancos automáticos · Reactores</span>
+        <h3>Corrección de factor de potencia</h3>
+        <p>Si su factura eléctrica incluye penalizaciones por bajo coseno fi, está pagando energía que no usa. Medimos su instalación con analizadores de red, dimensionamos el banco de capacitores exacto y lo instalamos llave en mano — con monitoreo opcional de calidad de energía para que la penalización no vuelva.</p>
+      </div>
+      <div class="ficha reveal">
+        <span class="spec">Solar · Eólica · Inversores · Baterías</span>
+        <h3>Energías renovables</h3>
+        <p>Cálculo, diseño e implementación de generación solar y eólica para autoconsumo industrial, con su mantenimiento posterior.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                <figure class="image-partners-container">
-                    <img width="200" height="50" class="image-element" src="./assets/aiyra-electromecanica-partners-mecalux.png" alt="" decoding="async" loading="lazy" title="aiyra-electromecanica-partners-mecalux">
-                </figure>
-                <figure class="image-partners-container">
-                    <img width="200" height="50" class="image-element" src="./assets/aiyra-electromecanica-partners-ulma.png" alt="" decoding="async" loading="lazy" title="aiyra-electromecanica-partners-mecalux">
-                </figure>
-                <figure class="image-partners-container">
-                    <img width="200" height="50" class="image-element" src="./assets/aiyra-electromecanica-partners-ar-racking.png" alt="" decoding="async" loading="lazy" title="aiyra-electromecanica-partners-mecalux">
-                </figure>
-            </div>
-
-            <div class="statistics-container">
-                <div class="statistic-element">
-                    <span class="value">+80</span>
-                    <p class="description">Proyectos de automatización</p>
-                </div>
-                <div class="statistic-element">
-                    <span class="value">+50</span>
-                    <p class="description">Robots industriales instalados</p>
-                </div>
-                <div class="statistic-element">
-                    <span class="value">+3.000</span>
-                    <p class="description">Capacitaciones</p>
-                </div>
-                <div class="statistic-element">
-                    <span class="value">+20</span>
-                    <p class="description">Ingenieros Senior</p>
-                </div>
-                <div class="statistic-element">
-                    <span class="value">+5.000.000</span>
-                    <p class="description">m3 construidos</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="services-container">
-
-        <div class="services-title-container">
-            <h4 class="title">Nuestros servicios</h4>
-        </div>
-
-        <div class="items-container">
-            <div class="service-element-container first">
-                <figure class="image-container">
-                    <img width="150" height="150" class="image-element" src="./assets/aiyra-servicios-obras-de-ingenieria.png" class="vc_single_image-img attachment-full" alt="" decoding="async" loading="lazy" title="aiyra-servicios-mantenimiento">
-                </figure>
-                <div class="label-container">
-                    <p class="service-label">OBRAS DE INGENIERIA</p>
-                </div>
-            </div>
-    
-            <div class="service-element-container first">
-                <figure class="image-container">
-                    <img width="150" height="150" class="image-element" src="./assets/aiyra-servicios-operacion-industrial.png" class="vc_single_image-img attachment-full" alt="" decoding="async" loading="lazy" title="aiyra-servicios-mantenimiento">
-                </figure>
-                <div class="label-container">
-                    <p class="service-label">OPERACIÓN INDUSTRIAL</p>
-                </div>
-            </div>
-    
-            <div class="service-element-container first">
-                <figure class="image-container">
-                    <img width="150" height="150" class="image-element" src="./assets/aiyra-servicios-montaje-industrial.png" class="vc_single_image-img attachment-full" alt="" decoding="async" loading="lazy" title="aiyra-servicios-mantenimiento">
-                </figure>
-                <div class="label-container">
-                    <p class="service-label">MONTAJE INDUSTRIAL</p>
-                </div>
-            </div>
-    
-            <div class="service-element-container first">
-                <figure class="image-container">
-                    <img width="150" height="150" class="image-element" src="./assets/aiyra-servicios-mantenimiento.png" class="vc_single_image-img attachment-full" alt="" decoding="async" loading="lazy" title="aiyra-servicios-mantenimiento">
-                </figure>
-                <div class="label-container">
-                    <p class="service-label">MANTENIMIENTO INDUSTRIAL</p>
-                </div>
-            </div>
-        </div>
+<section id="sectores">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Experiencia</span>
+      <h2>Sectores que confían en nosotros</h2>
+    </div>
+    <div class="sectores reveal">
+      <span class="tag">Retail y supermercados</span>
+      <span class="tag">Farma</span>
+      <span class="tag">Alimentos y bebidas</span>
+      <span class="tag">Papel — producción 24/7</span>
+      <span class="tag">Logística y centros de distribución</span>
+      <span class="tag">Minería e industria pesada</span>
+      <span class="tag">Sector público</span>
+    </div>
+    <p class="marcas reveal">Montamos sistemas de almacenaje de los principales fabricantes internacionales — <b>Mecalux, ULMA y AR Racking</b> — en coordinación con integradores de automatización intralogística.</p>
+  </div>
+</section>
 
 
+<section class="cielo plano" id="proceso">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Cómo trabajamos</span>
+      <h2>Montamos. Energizamos. Mantenemos. Monitoreamos.</h2>
+      <p>Un solo responsable desde el relevamiento hasta la operación — sin zonas grises entre contratistas.</p>
+    </div>
+    <div class="pasos reveal">
+      <div class="paso"><b>01</b><h3>Relevamiento</h3><p>Visita técnica, mediciones y verificación de sitio antes de cotizar.</p></div>
+      <div class="paso"><b>02</b><h3>Ingeniería</h3><p>Cálculo, planos de detalle y cronograma de obra realista.</p></div>
+      <div class="paso"><b>03</b><h3>Montaje</h3><p>Ejecución con personal propio, supervisión permanente y seguridad Dec. 911/96.</p></div>
+      <div class="paso"><b>04</b><h3>Puesta en marcha</h3><p>Comisionado, protocolos de ensayo y documentación conforme a obra.</p></div>
+      <div class="paso"><b>05</b><h3>Mantenimiento y monitoreo</h3><p>Abonos con telemetría 24/7 para que lo instalado nunca pare.</p></div>
+    </div>
+    <p class="marcas reveal" style="margin-top:30px">Objetivo permanente: <b>cero incidentes personales</b>. ART y seguros al día, supervisión de Seguridad e Higiene en cada obra.</p>
+  </div>
+</section>
 
-    </section>
+<section class="cierre" id="contacto">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow" style="color:#8FC5EC">Contacto</span>
+      <h2>Contanos qué necesita su planta</h2>
+      <p>Respondemos cotizaciones con relevamiento técnico previo y cronograma de obra realista. Escribinos por WhatsApp o coordiná una visita a su instalación.</p>
+      <div class="hero-cta">
+        <a class="btn btn-fuego" href="https://wa.me/5491133146544?text=Hola%2C%20quiero%20pedir%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        <a class="btn btn-blanco btn-linea" href="https://www.linkedin.com/in/christian-alberti-922574113/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="dato-contacto">
+      <b>Pilar</b><span>Buenos Aires, Argentina</span>
+      <b>+54 9 11 3314-6544</b><span>WhatsApp comercial</span>
+    </div>
+  </div>
+</section>
 
-    <section id="energy" class="energy-container">
-        <div class="energy-title-container">
-            <h4 class="title">Energía y climatización</h4>
-            <p class="description">Somos especialistas en todo tipo de instalaciones eléctricas industriales, tanto tradicionales como sustentables.</p>
-        </div>
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="anio"></span> Aiyra Electromecánica S.A.S. — Pilar, Buenos Aires, Argentina</div>
+    <div><a href="#servicios">Servicios</a> · <a href="#monitoreo">Monitoreo 24/7</a> · <a href="#contacto">Contacto</a></div>
+  </div>
+</footer>
 
-        <section class="cards-container">
-            <div class="card-container">
+<a class="wa" href="https://wa.me/5491133146544" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm7 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.2-2.3-.1-.5-.2-1.2-.4-2.1-.8-3.7-1.6-6.1-5.3-6.3-5.5-.2-.2-1.5-2-1.5-3.8s1-2.7 1.3-3.1c.3-.4.7-.5 1-.5h.7c.2 0 .5-.1.8.6.3.8 1.1 2.7 1.2 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7-.2.2-.4.5-.6.7-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.2 1.1 2.6 1.3.4.2.6.3.7.4.1.3.1.9-.3 1.6z"/></svg>
+</a>
 
-                <div class="card-image-element-container">
-                    <figure class="image-container">
-                        <img width="100" height="100" src="./assets/aiyra-electricidad-mt.png" class="image-element" alt="" decoding="async" loading="lazy" title="aiyra-electricidad-mt">
-                    </figure>
-                    <div class="label-container">
-                        <p class="service-label">MONTAJE INDUSTRIAL</p>
-                    </div>
-                </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* ============ util ============ */
+document.getElementById('anio').textContent = new Date().getFullYear();
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-                <div class="text-container">
-                    <p class="text-element">Desarrollos, cálculos, diseños e implementación en proyectos de Media Tensión (MT).</p>
-                </div>
-            </div>
+/* reveal on scroll */
+const obs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visto'); obs.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-            <div class="card-container">
+/* contadores */
+function animarCuenta(el){
+  const fin = parseInt(el.dataset.fin, 10);
+  if (reduceMotion) { el.textContent = fin.toLocaleString('es-AR'); return; }
+  const dur = 1400, t0 = performance.now();
+  function paso(t){
+    const p = Math.min((t - t0) / dur, 1);
+    el.textContent = Math.round(fin * (1 - Math.pow(1 - p, 3))).toLocaleString('es-AR');
+    if (p < 1) requestAnimationFrame(paso);
+  }
+  requestAnimationFrame(paso);
+}
+const obsC = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { animarCuenta(e.target); obsC.unobserve(e.target); } }), { threshold: .5 });
+document.querySelectorAll('.cuenta').forEach(el => obsC.observe(el));
 
-                <div class="card-image-element-container">
-                    <figure class="image-container">
-                        <img width="100" height="100" src="./assets/aiyra-energia-eolica.png" class="image-element" alt="" decoding="async" loading="lazy" title="aiyra-electricidad-mt">
-                    </figure>
-                    <div class="label-container">
-                        <p class="service-label">ENERGÍA EÓLICA</p>
-                    </div>
-                </div>
+/* telemetría simulada */
+(function(){
+  const defs = [
+    { v:'v1', s:'s1', base:-18.4, amp:.5, fmt:x=>x.toFixed(1).replace('.',',')+' °C' },
+    { v:'v2', s:'s2', base:7.2,  amp:.6, fmt:x=>x.toFixed(1).replace('.',',')+' °C' },
+    { v:'v3', s:'s3', base:.96,  amp:.012, fmt:x=>x.toFixed(2).replace('.',',') },
+    { v:'v4', s:'s4', base:11.8, amp:.7, fmt:x=>x.toFixed(1).replace('.',',')+' bar' },
+  ];
+  setInterval(()=>{
+    defs.forEach(d=>{
+      const val = d.base + (Math.random()-.5)*2*d.amp;
+      document.getElementById(d.v).textContent = d.fmt(val);
+    });
+  }, 1800);
+})();
 
-                <div class="text-container">
-                    <p class="text-element">Montaje y mantenimiento de molinos eólicos.</p>
-                </div>
-            </div>
+/* ============ escena 3D: autoportante + shuttle ============ */
+(function(){
+  const cont = document.getElementById('lienzo3d');
+  if (!cont || typeof THREE === 'undefined') return;
 
-            <div class="card-container">
+  const escena = new THREE.Scene();
+  const cam = new THREE.PerspectiveCamera(38, cont.clientWidth / cont.clientHeight, .1, 200);
+  const render = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  render.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  render.setSize(cont.clientWidth, cont.clientHeight);
+  cont.appendChild(render.domElement);
 
-                <div class="card-image-element-container">
-                    <figure class="image-container">
-                        <img width="100" height="100" src="./assets/aiyra-energia-solar.png" class="image-element" alt="" decoding="async" loading="lazy" title="aiyra-electricidad-mt">
-                    </figure>
-                    <div class="label-container">
-                        <p class="service-label">ENERGÍA SOLAR</p>
-                    </div>
-                </div>
+  const luzA = new THREE.AmbientLight(0xffffff, .75); escena.add(luzA);
+  const luzD = new THREE.DirectionalLight(0xffffff, .8); luzD.position.set(6, 12, 8); escena.add(luzD);
+  const luzF = new THREE.DirectionalLight(0x9fc8ea, .35); luzF.position.set(-8, 4, -6); escena.add(luzF);
 
-                <div class="text-container">
-                    <p class="text-element">Cálculo, diseño, inversores, baterías, implementación, mantenimiento y montaje.</p>
-                </div>
-            </div>
+  const matAcero  = new THREE.MeshLambertMaterial({ color: 0x2e6da8 });
+  const matViga   = new THREE.MeshLambertMaterial({ color: 0x9fb6c8 });
+  const matPallet = new THREE.MeshLambertMaterial({ color: 0xf4570a });
+  const matShut   = new THREE.MeshLambertMaterial({ color: 0x0e2233 });
 
-            <div class="card-container">
+  const BAYS = 5, DEPTH = 2, LEVELS = 5;
+  const BX = 2.0, BZ = 1.4, BY = 1.3;
+  const W = BAYS * BX, D = DEPTH * BZ, H = LEVELS * BY;
+  const raiz = new THREE.Group(); escena.add(raiz);
+  raiz.position.y = -H / 2;
 
-                <div class="card-image-element-container">
-                    <figure class="image-container">
-                        <img width="100" height="100" src="./assets/aiyra-climatizacion.png" class="image-element" alt="" decoding="async" loading="lazy" title="aiyra-electricidad-mt">
-                    </figure>
-                    <div class="label-container">
-                        <p class="service-label">CLIMATIZACIÓN</p>
-                    </div>
-                </div>
+  const piezas = [];
+  function pieza(geom, mat, x, y, z, delay){
+    const m = new THREE.Mesh(geom, mat);
+    m.position.set(x, y, z);
+    m.scale.set(.001, .001, .001);
+    raiz.add(m); piezas.push({ m, delay });
+    return m;
+  }
 
-                <div class="text-container">
-                    <p class="text-element">Desarrollo, implementación y mantenimiento de todo tipo de sistemas de refrigeración: AA centrales, calderas y splits.</p>
-                </div>
-            </div>
-        </section>
+  const gCol  = new THREE.BoxGeometry(.09, H, .09);
+  const gVigX = new THREE.BoxGeometry(BX, .07, .07);
+  const gVigZ = new THREE.BoxGeometry(.07, .07, BZ);
+  const gPal  = new THREE.BoxGeometry(BX * .62, BY * .52, BZ * .8);
 
-    
-    </section>
+  let d = 0;
+  for (let i = 0; i <= BAYS; i++) for (let k = 0; k <= DEPTH; k++)
+    pieza(gCol, matAcero, i * BX - W/2, H/2, k * BZ - D/2, d += .05);
+  for (let l = 1; l <= LEVELS; l++){
+    const y = l * BY;
+    for (let i = 0; i < BAYS; i++) for (let k = 0; k <= DEPTH; k++)
+      pieza(gVigX, matViga, i * BX - W/2 + BX/2, y, k * BZ - D/2, d += .03);
+    for (let i = 0; i <= BAYS; i++) for (let k = 0; k < DEPTH; k++)
+      pieza(gVigZ, matViga, i * BX - W/2, y, k * BZ - D/2 + BZ/2, d += .02);
+  }
 
-    <section class="robotic-container">
-        <div class="robotic-title-container">
-            <h4 class="title">Conversión a la robótica</h4>
-            <p class="description">Brindamos soluciones a medida de cada cliente optimizando sus procesos productivos industriales.</p>
-            <p class="description">Contamos con una larga trayectoria en la conversión a robótica, automatización y puesta en marcha de <strong>INDUSTRIA 4.0.</strong></p>
-            <p class="description">Somos especialistas profesionales en la operación y mantenimiento de plantas productivas continuas 7×24 (7 días a la semana las 24 horas del día).</p>
-        </div>
+  const huecos = [];
+  for (let l = 0; l < LEVELS; l++) for (let i = 0; i < BAYS; i++)
+    huecos.push({ x: i * BX - W/2 + BX/2, y: l * BY + BY * .32, z: 0, lleno: false });
 
-        <figure class="image-container">
-			<img width="500" height="400" src="./assets/aiyra-electromecanica-conversion-robotica-sm.jpg" class="image-element" alt="" decoding="async" loading="lazy" title="aiyra-electromecanica-conversion-robotica-sm">
-		</figure>
-    </section>
+  const shuttle = new THREE.Group();
+  const cuerpo = new THREE.Mesh(new THREE.BoxGeometry(BX * .5, .16, BZ * .7), matShut);
+  shuttle.add(cuerpo);
+  const carga = new THREE.Mesh(gPal, matPallet); carga.position.y = BY * .3; shuttle.add(carga);
+  raiz.add(shuttle);
+  shuttle.position.set(-W/2 - BX, BY * .12, 0);
 
-    <a href="https://wa.me/5491133146544" class="whatsapp-button"target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" /></a>
+  let rotY = .65, rotX = .32, targetY = rotY, targetX = rotX, arrastrando = false, px = 0, py = 0;
+  function ubicarCam(){
+    const r = 13.5;
+    cam.position.set(Math.sin(rotY) * Math.cos(rotX) * r, Math.sin(rotX) * r + 1.2, Math.cos(rotY) * Math.cos(rotX) * r);
+    cam.lookAt(0, .6, 0);
+  }
+  cont.addEventListener('pointerdown', e => { arrastrando = true; px = e.clientX; py = e.clientY; });
+  window.addEventListener('pointerup', () => arrastrando = false);
+  window.addEventListener('pointermove', e => {
+    if (!arrastrando) return;
+    targetY += (e.clientX - px) * .006; targetX += (e.clientY - py) * .004;
+    targetX = Math.max(.05, Math.min(1.1, targetX));
+    px = e.clientX; py = e.clientY;
+  });
 
+  let fase = 'entrando', hueco = null, t = 0, esperaFin = 0;
+  function elegirHueco(){
+    const libres = huecos.filter(h => !h.lleno);
+    if (!libres.length) return null;
+    return libres[Math.floor(Math.random() * libres.length)];
+  }
+  const reloj = new THREE.Clock();
 
-   <script defer src="main.js"></script>
+  function animar(){
+    requestAnimationFrame(animar);
+    const dt = Math.min(reloj.getDelta(), .05);
+    const ahora = reloj.elapsedTime;
+
+    piezas.forEach(p => {
+      if (ahora > p.delay){
+        const s = Math.min((ahora - p.delay) / .4, 1);
+        const e = 1 - Math.pow(1 - s, 3);
+        p.m.scale.set(e, e, e);
+      }
+    });
+
+    if (!arrastrando && !reduceMotion) targetY += dt * .1;
+    rotY += (targetY - rotY) * .08;
+    rotX += (targetX - rotX) * .08;
+    ubicarCam();
+
+    if (!reduceMotion && ahora > d + .6){
+      t += dt;
+      if (fase === 'entrando'){
+        if (!hueco) hueco = elegirHueco();
+        if (!hueco){
+          if (!esperaFin) esperaFin = ahora;
+          if (ahora - esperaFin > 2.2){
+            huecos.forEach(h => { h.lleno = false; if (h.mesh){ raiz.remove(h.mesh); h.mesh = null; } });
+            esperaFin = 0;
+          }
+        } else {
+          shuttle.position.y += ((hueco.y - BY * .2) - shuttle.position.y) * dt * 2.4;
+          shuttle.position.x += (hueco.x - shuttle.position.x) * dt * 2.0;
+          shuttle.position.z += (hueco.z - shuttle.position.z) * dt * 2.4;
+          carga.visible = true;
+          if (Math.abs(shuttle.position.x - hueco.x) < .05 && Math.abs(shuttle.position.y - (hueco.y - BY * .2)) < .05){ fase = 'dejando'; t = 0; }
+        }
+      } else if (fase === 'dejando'){
+        if (t > .5){
+          const pal = new THREE.Mesh(gPal, matPallet);
+          pal.position.set(hueco.x, hueco.y, hueco.z);
+          raiz.add(pal); hueco.mesh = pal; hueco.lleno = true;
+          carga.visible = false; hueco = null; fase = 'saliendo'; t = 0;
+        }
+      } else if (fase === 'saliendo'){
+        shuttle.position.x += ((-W/2 - BX) - shuttle.position.x) * dt * 2.2;
+        shuttle.position.y += (BY * .12 - shuttle.position.y) * dt * 2.2;
+        if (t > 1.4){ carga.visible = true; fase = 'entrando'; t = 0; }
+      }
+    }
+
+    render.render(escena, cam);
+  }
+  ubicarCam(); animar();
+
+  window.addEventListener('resize', () => {
+    cam.aspect = cont.clientWidth / cont.clientHeight;
+    cam.updateProjectionMatrix();
+    render.setSize(cont.clientWidth, cont.clientHeight);
+  });
+})();
+</script>
 </body>
 </html>
