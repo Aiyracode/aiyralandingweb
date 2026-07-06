@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-label="Ilustración de un almacén autoportante a gran altura, con la estantería que soporta la cubierta y los cerramientos del edificio">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EDF5FB"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1177C7" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="520" fill="url(#sky)"/>
+  <rect width="1000" height="520" fill="url(#grid)"/>
+
+  <!-- ground -->
+  <line x1="60" y1="470" x2="940" y2="470" stroke="#0E2233" stroke-width="3"/>
+
+  <!-- roof / cladding supported by the racks (self-supporting) -->
+  <polygon points="150,120 850,120 900,150 100,150" fill="#3E5468"/>
+  <rect x="100" y="150" width="800" height="10" fill="#2E6DA8"/>
+
+  <!-- uprights -->
+  <g stroke="#2E6DA8" stroke-width="10">
+    <line x1="180" y1="160" x2="180" y2="470"/>
+    <line x1="360" y1="160" x2="360" y2="470"/>
+    <line x1="540" y1="160" x2="540" y2="470"/>
+    <line x1="720" y1="160" x2="720" y2="470"/>
+    <line x1="820" y1="160" x2="820" y2="470"/>
+  </g>
+
+  <!-- beams (levels) -->
+  <g stroke="#9FB6C8" stroke-width="7">
+    <line x1="180" y1="215" x2="820" y2="215"/>
+    <line x1="180" y1="275" x2="820" y2="275"/>
+    <line x1="180" y1="335" x2="820" y2="335"/>
+    <line x1="180" y1="395" x2="820" y2="395"/>
+  </g>
+
+  <!-- diagonal bracing -->
+  <g stroke="#9FB6C8" stroke-width="3" stroke-opacity="0.7">
+    <line x1="180" y1="215" x2="360" y2="275"/>
+    <line x1="360" y1="215" x2="180" y2="275"/>
+    <line x1="540" y1="335" x2="720" y2="395"/>
+    <line x1="720" y1="335" x2="540" y2="395"/>
+  </g>
+
+  <!-- pallets (orange) -->
+  <g fill="#F4570A">
+    <rect x="200" y="180" width="120" height="30" rx="3"/>
+    <rect x="400" y="180" width="120" height="30" rx="3"/>
+    <rect x="600" y="180" width="120" height="30" rx="3"/>
+    <rect x="200" y="240" width="120" height="30" rx="3"/>
+    <rect x="600" y="240" width="120" height="30" rx="3"/>
+    <rect x="400" y="300" width="120" height="30" rx="3"/>
+    <rect x="600" y="300" width="120" height="30" rx="3"/>
+    <rect x="200" y="360" width="120" height="30" rx="3"/>
+    <rect x="400" y="360" width="120" height="30" rx="3"/>
+  </g>
+
+  <!-- height dimension -->
+  <g stroke="#0E2233" stroke-width="2">
+    <line x1="120" y1="150" x2="120" y2="470"/>
+    <path d="M112 158 L120 148 L128 158" fill="none"/>
+    <path d="M112 462 L120 472 L128 462" fill="none"/>
+  </g>
+  <text x="105" y="315" font-family="Arial, sans-serif" font-size="22" fill="#0E2233" font-weight="bold" transform="rotate(-90 105 315)" text-anchor="middle">gran altura</text>
+</svg>

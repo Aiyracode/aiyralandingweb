@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" role="img" aria-label="Ilustración de un sistema de almacenaje compacto Pallet Shuttle, con un carro satélite que transporta un pallet dentro del canal de la estantería">
+  <defs>
+    <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#EDF5FB"/>
+    </linearGradient>
+    <pattern id="grid3" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1177C7" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="520" fill="url(#sky3)"/>
+  <rect width="1000" height="520" fill="url(#grid3)"/>
+
+  <!-- ground -->
+  <line x1="70" y1="470" x2="930" y2="470" stroke="#0E2233" stroke-width="3"/>
+
+  <!-- compact rack block: uprights -->
+  <g stroke="#2E6DA8" stroke-width="10">
+    <line x1="140" y1="120" x2="140" y2="470"/>
+    <line x1="500" y1="120" x2="500" y2="470"/>
+    <line x1="860" y1="120" x2="860" y2="470"/>
+  </g>
+  <!-- shelf rails (deep channels) -->
+  <g stroke="#9FB6C8" stroke-width="7">
+    <line x1="140" y1="170" x2="860" y2="170"/>
+    <line x1="140" y1="260" x2="860" y2="260"/>
+    <line x1="140" y1="350" x2="860" y2="350"/>
+  </g>
+
+  <!-- stored pallets on upper levels -->
+  <g fill="#F4570A">
+    <rect x="180" y="185" width="120" height="34" rx="3"/>
+    <rect x="330" y="185" width="120" height="34" rx="3"/>
+    <rect x="560" y="185" width="120" height="34" rx="3"/>
+    <rect x="710" y="185" width="120" height="34" rx="3"/>
+    <rect x="180" y="275" width="120" height="34" rx="3"/>
+    <rect x="710" y="275" width="120" height="34" rx="3"/>
+  </g>
+
+  <!-- shuttle channel (bottom level) with the shuttle cart carrying a pallet -->
+  <rect x="150" y="378" width="700" height="70" fill="#F1F6FA" stroke="#9FB6C8" stroke-width="2"/>
+  <!-- pallet being carried -->
+  <rect x="470" y="384" width="150" height="34" rx="3" fill="#F4570A"/>
+  <!-- shuttle cart (dark) under the pallet -->
+  <rect x="470" y="420" width="150" height="22" rx="4" fill="#0E2233"/>
+  <circle cx="495" cy="446" r="7" fill="#3E5468"/>
+  <circle cx="595" cy="446" r="7" fill="#3E5468"/>
+  <!-- direction arrows (depth of channel) -->
+  <g stroke="#1177C7" stroke-width="4" fill="none">
+    <line x1="360" y1="413" x2="440" y2="413"/>
+    <path d="M432 405 L446 413 L432 421"/>
+    <line x1="660" y1="413" x2="740" y2="413"/>
+    <path d="M732 405 L746 413 L732 421"/>
+  </g>
+
+  <!-- tablet / wifi control icon -->
+  <g>
+    <rect x="812" y="300" width="46" height="64" rx="6" fill="#0E2233"/>
+    <rect x="819" y="308" width="32" height="42" rx="2" fill="#DCE8F2"/>
+    <circle cx="835" cy="357" r="3" fill="#DCE8F2"/>
+    <g fill="none" stroke="#3AD07A" stroke-width="3">
+      <path d="M828 292 a10 10 0 0 1 14 0"/>
+      <path d="M823 286 a18 18 0 0 1 24 0"/>
+    </g>
+  </g>
+</svg>
